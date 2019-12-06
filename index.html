@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Travel Guide</title>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <header>
+    <nav>
+      <div class="nav-wrapper blue-grey darken-2">
+        <a href="#" class="brand-logo center">Travel Guide</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col m6 s12">
+          <div class="row">
+            <div class="input-field col s8">
+              <input type="text" id="autocomplete-input" class="autocomplete" />
+              <label for="autocomplete-input"
+                >Where would you like to go?</label
+              >
+              <i class="material-icons prefix" id="findCity">search</i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card blue-grey lighten-2">
+              <div class="card-content white-text">
+                <span class="card-title">Facts</span>
+                <p>this is for facts</p>
+                <br />
+                <span class="card-title">Reviews</span>
+                <p>this is for reviews</p>
+                <br />
+                <span class="card-title">Other Information</span>
+                <p>this is for other information</p>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m6 s12">
+          <div class="card blue-grey lighten-2">
+            <div class="card-content white-text">
+              <span class="card-title">Map</span>
+              <!--<div class="temp"></div>-->
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwPtnt5c8q3p2D4R6axYe1PKhCTVkawcI&callback=myMap"
+      async
+      defer
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
