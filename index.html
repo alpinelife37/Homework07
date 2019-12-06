@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Travel Info</title>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
@@ -26,6 +26,22 @@
 
 <body>
 
+<!--
+        <h5>Search for a City</h5>
+        <div>
+          <form class="form-inline">
+            <div class="form-group mb-2 col-10">
+              <input type="text" id="cityInput" />
+            </div>
+            <button id="findCity" type="submit" class="btn btn-info col-2"></button>
+          </form>
+        </div>
+    
+        <div class="temp"></div>
+        <div id="map"></div>
+        
+-->
+
   <div class="container">
     <div class="row">
       <div class="col m6 s12">
@@ -35,6 +51,9 @@
             <label for="autocomplete-input">Where would you like to go?</label>
             <i class="material-icons prefix">search</i>
           </div>
+
+          
+
         </div>
         <div class="row">
           <div class="card blue-grey lighten-2">
@@ -57,7 +76,8 @@
         <div class="card blue-grey lighten-2">
           <div class="card-content white-text">
             <span class="card-title">Map</span>
-            <br><br><br><br><br><br><br><br><br><br>
+            <!--<div class="temp"></div>-->
+            <div id="map"></div>
 
           </div>
 
@@ -69,6 +89,11 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwPtnt5c8q3p2D4R6axYe1PKhCTVkawcI&callback=myMap"
+      async
+      defer
+  ></script>
   <script src="script.js"></script>
 
 </body>
