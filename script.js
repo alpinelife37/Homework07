@@ -17,8 +17,8 @@ function searchForCityByName() {
     url: queryURLWeather,
     method: "GET"
   }).then(function(response) {
-    // $(".temp").text("Temperature (F) " + response.main.temp);
-    // console.log();
+    $(".temp").text("Temperature (F) " + response.main.temp);
+    console.log();
     var lat = response.coord.lat;
     var lon = response.coord.lon;
     console.log(lat);
@@ -26,7 +26,20 @@ function searchForCityByName() {
 
     myMap(lat, lon);
   });
+
+  let googleAPIKey = "AIzaSyAwPtnt5c8q3p2D4R6axYe1PKhCTVkawcI";
+  let placeQuery = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + city + "+city+point+of+interest&language=en&key=" + googleAPIKey;
+
+
+  $.ajax({
+    url: placeQuery,
+    method: "GET"
+  }).then(function(response) {
+    console.log('google api response', response);
+  })
 };
+
+
 
 function myMap(lat, lon) {
   var mapProp = {
