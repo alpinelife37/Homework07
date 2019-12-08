@@ -7,7 +7,7 @@ This is a travel app that allows the user to type in a city name and view specif
 ### TO USE
 No installation is necessary to use the app; all its features can be utilized directly from the website.
 ```
-type in city name
+type in city name, scroll through results, click links to points of interest
 ```
 
 ### BUILT WITH
