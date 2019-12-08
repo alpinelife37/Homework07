@@ -18,7 +18,7 @@ type in city name, scroll through results, click links to points of interest
 * [Materialize](https://materializecss.com/).
 
 ### CONTRIBUTING
-Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/maxskewes/Homework07/blob/readme-contributing/README.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ### ARTHORS AND CONTRIBUTORS
 ###### JAMES
