@@ -23,7 +23,7 @@ Please read [CONTRIBUTING.md](https://github.com/maxskewes/Homework07/blob/readm
 ### ARTHORS AND CONTRIBUTORS
 ###### [JAMES](https://github.com/alpinelife37)
 ###### [SYDNEY](https://github.com/sguitjens)
-###### [MAX]
+###### [MAX](https://github.com/maxskewes)
 
 ### ACKNOWLDEGEMENTS 
 Thanks to [Farani Lucero](https://github.com/faranilucero) for his aid and guidance in this project.
