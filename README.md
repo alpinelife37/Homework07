@@ -22,7 +22,7 @@ Please read [CONTRIBUTING.md](https://github.com/maxskewes/Homework07/blob/readm
 
 ### ARTHORS AND CONTRIBUTORS
 ###### JAMES
-###### SYDNEY
+###### [SYDNEY](https://github.com/sguitjens)
 ###### MAX
 
 ### ACKNOWLDEGEMENTS 
