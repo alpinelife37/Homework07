@@ -21,9 +21,9 @@ type in city name, scroll through results, click links to points of interest
 Please read [CONTRIBUTING.md](https://github.com/maxskewes/Homework07/blob/readme-contributing/README.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ### ARTHORS AND CONTRIBUTORS
-###### JAMES
+###### [JAMES](https://github.com/alpinelife37)
 ###### [SYDNEY](https://github.com/sguitjens)
-###### MAX
+###### [MAX]
 
 ### ACKNOWLDEGEMENTS 
 Thanks to [Farani Lucero](https://github.com/faranilucero) for his aid and guidance in this project.
