@@ -11,7 +11,11 @@ type in city name, scroll through results, click links to points of interest
 ```
 
 ### BUILT WITH
-This app was built utilizing [HTML](https://html.com/), [CSS](https://www.w3schools.com/css/), [Javascript](https://www.javascript.com/), [JQuery](https://jquery.com/) and [Materialize](https://materializecss.com/).
+* [HTML](https://html.com/)
+* [CSS](https://www.w3schools.com/css/)
+* [Javascript](https://www.javascript.com/)
+* [JQuery](https://jquery.com/)
+* [Materialize](https://materializecss.com/).
 
 ### ARTHORS AND CONTRIBUTORS
 ###### JAMES
