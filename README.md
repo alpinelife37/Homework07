@@ -8,7 +8,7 @@ TO USE
 No installation is necessary to use the app; all its features can be utilized directly from the website.
 
 BUILT WITH
-This app was built utilizing HTML, CSS, Javascript, JQuery and Materialize.
+This app was built utilizing HTML, CSS, Javascript, JQuery and [Materialize](https://materializecss.com/).
 
 ARTHORS AND CONTRIBUTORS
 JAMES
