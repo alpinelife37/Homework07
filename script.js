@@ -40,19 +40,19 @@ function searchForCityByName() {
       ///////////////////////////////////////////////////////////////////////////////
       var latLon = { lat: lat, lng: lon };
       service.nearbySearch(
-        { location: latLon, radius: 500, type: ["tourist_attraction"] },
+        { location: latLon, radius: 5000, type: ["tourist_attraction"] },
         function(results, status) {
           if (status !== "OK") return;
           console.log(results);
-          $(".name").text(response[0].html_attributions.name);
-          $(".address").text(response[0].vicinity);
-          $(".rating").text(response[0].rating);
-          $(".name1").text(response[1].html_attributions.name);
-          $(".address1").text(response[1].vicinity);
-          $(".rating1").text(response[1].rating);
-          $(".name2").text(response[2].html_attributions.name);
-          $(".address2").text(response[2].vicinity);
-          $(".rating2").text(response[2].rating);
+          $(".name").text(results[0].name);
+          $(".address").text(results[0].vicinity);
+          $(".rating").text("Rating: " + results[0].rating);
+          $(".name1").text(results[1].name);
+          $(".address1").text(results[1].vicinity);
+          $(".rating1").text("Rating: " + results[1].rating);
+          $(".name2").text(results[2].name);
+          $(".address2").text(results[2].vicinity);
+          $(".rating2").text("Rating: " + results[2].rating);
         }
       );
       ////////////////////////////////////////////////////////////////////////
