@@ -17,6 +17,9 @@ type in city name, scroll through results, click links to points of interest
 * [JQuery](https://jquery.com/)
 * [Materialize](https://materializecss.com/).
 
+### CONTRIBUTING
+Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
+
 ### ARTHORS AND CONTRIBUTORS
 ###### JAMES
 ###### SYDNEY
