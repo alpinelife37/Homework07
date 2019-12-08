@@ -26,5 +26,5 @@ Please read [CONTRIBUTING.md](https://github.com/maxskewes/Homework07/blob/readm
 ###### MAX
 
 ### ACKNOWLDEGEMENTS 
-Thanks to Farani Lucero for his aid and guidance in this project.
+Thanks to [Farani Lucero](https://github.com/faranilucero) for his aid and guidance in this project.
 
