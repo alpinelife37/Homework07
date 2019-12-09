@@ -9,3 +9,30 @@
 html, body {
   background-color: darkslategray;
 }
+
+/* label color */
+.input-field label {
+  color: #eceff1;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #eceff1;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #b0bec5;
+}
+
+.input-field .prefix{
+  color: #eceff1;
+}
+
+.gray-text {
+  color: #eceff1;
+}

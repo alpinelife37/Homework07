@@ -5,7 +5,7 @@ $("#findCity").on("click", function(event) {
 var service;
 var map;
 function searchForCityByName() {
-  var city = $("#autocomplete-input").val();
+  var city = $("#search-input").val();
   var APIKey = "089100f1dce99fc69ca132b28b1e31ea";
   var queryURLWeather =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -16,7 +16,7 @@ function searchForCityByName() {
     url: queryURLWeather,
     method: "GET"
   }).then(function(response) {
-    $(".temp").text("Temperature (F) " + response.main.temp);
+    $(".temp").text("Temperature " + response.main.temp + String.fromCharCode(176) + "F");
     var lat = response.coord.lat;
     var lon = response.coord.lon;
     console.log("lat", lat);
@@ -36,7 +36,7 @@ function searchForCityByName() {
         }
         map.setCenter(results[0].geometry.location);
       }
-
+      console.log("place service response", results);
       ///////////////////////////////////////////////////////////////////////////////
       var latLon = { lat: lat, lng: lon };
       service.nearbySearch(
