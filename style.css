@@ -6,6 +6,12 @@
   z-index: 99 !important;
 }
 /* Optional: Makes the sample page fill the window. */
-html, body {
+html,
+body {
   background-color: darkslategray;
 }
+
+/* #map {
+  width: 100%;
+  height: 100%;
+} */
