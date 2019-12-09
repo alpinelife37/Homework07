@@ -20,34 +20,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <header>
-    <!-- <nav> -->
-      <div class="nav-wrapper blue-grey darken-2 row">
-        <div class="input-field col m4 s12">
-          <input type="text" id="autocomplete-input" class="autocomplete white-text" />
-          <label for="autocomplete-input">Where would you like to go?</label>
-          <i class="material-icons prefix" id="findCity">search</i>
-        </div>
-        <div class="col m8 s12 center">
-          <h3 class="white-text">Travel Guide</h3>
-          <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
-        </div>
+    <div class="nav-wrapper blue-grey darken-2 row">
+
+      <div class="col m8 s12 right">
+        <h3 class="gray-text center-align">Travel Guide</h3>
+        <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
       </div>
-    <!-- </nav> -->
+
+      <div class="input-field col m4 s11 left"><div class="col m1"></div>
+        <input type="text" id="search-input" class="white-text" />
+        <label>Where would you like to go?</label>
+        <i class="material-icons prefix" id="findCity">search</i>
+      </div>
+      <!-- <div class="col m8 s12 center">
+        <h3 class="gray-text">Travel Guide</h3>
+        <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
+      </div> -->
+    </div>
   </header>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <!-- <div class="col m6 s12"> -->
-          <!-- <div class="row">
-            <!-- <div class="input-field col s8">
-              <input type="text" id="autocomplete-input" class="autocomplete white-text" />
-              <label for="autocomplete-input">Where would you like to go?</label>
-              <i class="material-icons prefix" id="findCity">search</i>
-            </div> -->
-          <!-- </div> -->
           <div class="row">
             <div class="col m4 s12">
-              <div class="card blue-grey lighten-2">
+              <div class="card blue-grey lighten-2 z-depth-3">
                 <div class="card-content white-text">
                   <span class="card-title">Tourist Attractions</span>
                   <div class="name"></div>
@@ -66,9 +62,10 @@
             </div>
 
             <div class="col m8 s12">
-                <div class="card blue-grey lighten-2">
-                  <div class="card-content center">
-                    <div id="map"></div>
+                <div class="card blue-grey lighten-2 z-depth-3">
+                  <div class="card-content">
+                    <div class="temp white-text">temporary</div>
+                    <div id="map" class="center"></div>
                   </div>
                 </div>
               </div>

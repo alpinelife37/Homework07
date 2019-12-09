@@ -5,7 +5,7 @@ $("#findCity").on("click", function(event) {
 var service;
 var map;
 function searchForCityByName() {
-  var city = $("#autocomplete-input").val();
+  var city = $("#search-input").val();
   var APIKey = "089100f1dce99fc69ca132b28b1e31ea";
   var queryURLWeather =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
