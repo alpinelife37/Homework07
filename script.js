@@ -16,7 +16,13 @@ function searchForCityByName() {
     url: queryURLWeather,
     method: "GET"
   }).then(function(response) {
-    $(".temp").text("Temperature " + response.main.temp + String.fromCharCode(176) + "F");
+    $(".temp").text(
+      "Current Temperature " +
+        response.main.temp +
+        String.fromCharCode(176) +
+        "F in " +
+        city
+    );
     var lat = response.coord.lat;
     var lon = response.coord.lon;
     console.log("lat", lat);
