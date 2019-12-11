@@ -1,9 +1,28 @@
+var service;
+var map;
+var instance;
+
 $("#findCity").on("click", function(event) {
   event.preventDefault();
   searchForCityByName();
 });
-var service;
-var map;
+
+$("input").keypress(event => {
+  if (event.which == 13) {
+    searchForCityByName();
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var options = {
+    dismissible: true,
+    inDuration: 500,
+    outDuration: 500
+  }
+  var elem = document.querySelector('.modal');
+  instance = M.Modal.init(elem, options);
+});
+
 function searchForCityByName() {
   var city = $("#search-input").val();
   var APIKey = "089100f1dce99fc69ca132b28b1e31ea";
@@ -16,7 +35,7 @@ function searchForCityByName() {
     url: queryURLWeather,
     method: "GET",
     error: (function(err) {
-      return alert("Your entry was not a valid city name. Please check your spelling and try again.");
+      return instance.open();
     })
   }).then(function(response) {
     $(".temp").text(
@@ -28,8 +47,6 @@ function searchForCityByName() {
     );
     var lat = response.coord.lat;
     var lon = response.coord.lon;
-    console.log("lat", lat);
-    console.log("long", lon);
     map = myMap(lat, lon);
     var request = {
       query: city,
@@ -37,22 +54,17 @@ function searchForCityByName() {
     };
     service = new google.maps.places.PlacesService(map);
     service.findPlaceFromQuery(request, function(results, status) {
-      console.log("status", status);
-      console.log("service", service);
       if (status === google.maps.places.PlacesServiceStatus.OK) {
         for (var i = 0; i < results.length; i++) {
           createMarker(results[i]);
         }
         map.setCenter(results[0].geometry.location);
       }
-      console.log("place service response", results);
-      ///////////////////////////////////////////////////////////////////////////////
       var latLon = { lat: lat, lng: lon };
       service.nearbySearch(
         { location: latLon, radius: 5000, type: ["tourist_attraction"] },
         function(results, status) {
           if (status !== "OK") return;
-          console.log(results);
           $(".name").text(results[0].name);
           $(".address").text(results[0].vicinity);
           $(".rating").text("Rating: " + results[0].rating);
@@ -64,10 +76,10 @@ function searchForCityByName() {
           $(".rating2").text("Rating: " + results[2].rating);
         }
       );
-      ////////////////////////////////////////////////////////////////////////
     });
   });
 }
+
 function createMarker(place) {
   var marker = new google.maps.Marker({
     map: map,
@@ -78,6 +90,7 @@ function createMarker(place) {
     infowindow.open(map, this);
   });
 }
+
 function myMap(lat, lon) {
   var mapProp = {
     center: new google.maps.LatLng(lat, lon),
@@ -85,8 +98,3 @@ function myMap(lat, lon) {
   };
   return new google.maps.Map(document.getElementById("map"), mapProp);
 }
-$("input").keypress(event => {
-  if (event.which == 13) {
-    searchForCityByName();
-  }
-});
