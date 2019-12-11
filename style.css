@@ -1,41 +1,28 @@
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
-/* .temp {
-  width: 300px;
-  height: 300px;
-  z-index: 99 !important;
-} */
 /* Optional: Makes the sample page fill the window. */
-html,
-body {
+html body {
   background-color: darkslategray;
 }
 
-/* label color */
+/* label color "Where do you want to go?" */
 .input-field label {
-  color: #eceff1;
-}
-/* label focus color */
-.input-field input[type="text"]:focus + label {
   color: #000;
-}
-/* label underline focus color */
-.input-field input[type="text"]:focus {
-  border-bottom: 1px solid #eceff1;
-  box-shadow: 0 1px 0 0 #000;
 }
 
 /* icon prefix focus color */
 .input-field .prefix.active {
-  color: #b0bec5;
+  color: #26a69a;
 }
 
 .input-field .prefix {
-  color: #eceff1;
+  color: #000;
 }
 
 .gray-text {
   color: #eceff1;
+}
+
+#search-input {
+  border-bottom-color: #000;
 }
 
 #map {
@@ -75,5 +62,11 @@ img {
 @media (max-width: 350px) {
   .logo-img {
     width: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo-img {
+    width: 350px;
   }
 }
