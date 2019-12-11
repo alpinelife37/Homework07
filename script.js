@@ -14,7 +14,10 @@ function searchForCityByName() {
     APIKey;
   $.ajax({
     url: queryURLWeather,
-    method: "GET"
+    method: "GET",
+    error: (function(err) {
+      return alert("Your entry was not a valid city name. Please check your spelling and try again.");
+    })
   }).then(function(response) {
     $(".temp").text(
       "Current Temperature " +
