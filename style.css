@@ -17,12 +17,9 @@ html body {
   color: #000;
 }
 
-.gray-text {
-  color: #eceff1;
-}
-
 #search-input {
   border-bottom-color: #000;
+  font-size: 18px;
 }
 
 #map {
