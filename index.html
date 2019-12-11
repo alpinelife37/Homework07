@@ -15,14 +15,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <header>
-    <div class="nav-wrapper blue-grey darken-2 row">
-      <div class="col m8 s12 right">
-        <h3 class="gray-text center-align">Wanderlust</h3>
+    <div class="nav-wrapper blue-grey lighten-4 row">
+      <div class="col m8 s12 right title-div">
+        <img src="assets/images/wanderlust.png" alt="Wanderlust" class=logo-img> 
         <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
       </div>
 
@@ -32,11 +32,11 @@
           type="text"
           id="search-input"
           spellcheck="false"
-          class="white-text"
+          class="black-text"
         />
         <label>Where would you like to go?</label>
         <i class="material-icons prefix" id="findCity">search</i>
-        <div class="temp white-text"></div>
+        <div class="temp black-text"></div>
       </div>
     </div>
   </header>
@@ -45,8 +45,8 @@
       <div class="row">
         <div class="row">
           <div class="col m4 s12">
-            <div class="card blue-grey lighten-2 z-depth-3">
-              <div id="attractionList" class="card-content white-text">
+            <div class="card blue-grey lighten-4 z-depth-3">
+              <div id="attractionList" class="card-content black-text">
                 <span class="card-title">Tourist Attractions</span>
                 <div class="name"></div>
                 <div class="address"></div>
@@ -64,7 +64,7 @@
           </div>
 
           <div class="col m8 s12">
-            <div class="card blue-grey lighten-2 z-depth-3">
+            <div class="card blue-grey lighten-4 z-depth-3">
               <div id="mapCard" class="card-content">
                 <div id="map" class="center"></div>
               </div>

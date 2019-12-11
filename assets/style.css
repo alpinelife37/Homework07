@@ -1,0 +1,69 @@
+/* Optional: Makes the sample page fill the window. */
+html body {
+  background-color: darkslategray;
+}
+
+/* label color "Where do you want to go?" */
+.input-field label {
+  color: #000;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #26a69a;
+}
+
+.input-field .prefix {
+  color: #000;
+}
+
+#search-input {
+  border-bottom-color: #000;
+  font-size: 18px;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+#mapCard {
+  height: 400px;
+}
+
+#attractionList {
+  height: 400px;
+}
+
+.modal {
+  left: 0;
+  right: 0;
+  background-color: #eceff1;
+  padding: 0;
+  max-height: 40%;
+  width: 35%;
+  will-change: top, opacity;
+}
+
+img {
+  height: 100%;
+}
+
+.title-div {
+  height: 100px;
+  text-align: center;
+  display: block;
+}
+
+/*350px width*/
+@media (max-width: 350px) {
+  .logo-img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo-img {
+    width: 350px;
+  }
+}

@@ -23,6 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
   instance = M.Modal.init(elem, options);
 });
 
+function convertToTitleCase(str) {
+  let words = str.toLowerCase().split(" ");
+  words.forEach(function(item, index) {
+    words[index] = item[0].toUpperCase() + item.slice(1);
+  })
+  return words.join(" ");
+}
+
 function searchForCityByName() {
   var city = $("#search-input").val();
   var APIKey = "089100f1dce99fc69ca132b28b1e31ea";
@@ -43,7 +51,7 @@ function searchForCityByName() {
         response.main.temp +
         String.fromCharCode(176) +
         "F in " +
-        city
+        convertToTitleCase(city)
     );
     var lat = response.coord.lat;
     var lon = response.coord.lon;
