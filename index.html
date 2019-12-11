@@ -28,7 +28,12 @@
 
       <div class="input-field col m4 s11 left">
         <div class="col m1"></div>
-        <input type="text" id="search-input" class="black-text" />
+        <input
+          type="text"
+          id="search-input"
+          spellcheck="false"
+          class="white-text"
+        />
         <label>Where would you like to go?</label>
         <i class="material-icons prefix" id="findCity">search</i>
         <div class="temp black-text"></div>
@@ -69,16 +74,21 @@
       </div>
     </div>
 
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h5>Search Error</h5>
-      <p>Your entry was not a valid city name. Please check your spelling and try again.</p>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h5>Search Error</h5>
+        <p>
+          Your entry was not a valid city name. Please check your spelling and
+          try again.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-blue-grey btn-flat"
+          >OK</a
+        >
+      </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-blue-grey btn-flat">OK</a>
-    </div>
-  </div>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
