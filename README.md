@@ -20,7 +20,10 @@ type in city name, scroll through results, click links to points of interest
 - [CSS](https://www.w3schools.com/css/)
 - [Javascript](https://www.javascript.com/)
 - [JQuery](https://jquery.com/)
-- [Materialize](https://materializecss.com/).
+- [Materialize](https://materializecss.com/)
+- [Open Weather API](https://openweathermap.org/api)
+- [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial)
+- [Google Place API](https://developers.google.com/places/web-service/intro).
 
 ### CONTRIBUTING
 
