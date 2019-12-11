@@ -60,3 +60,20 @@ body {
   width: 35%;
   will-change: top, opacity;
 }
+
+img {
+  height: 100%;
+}
+
+.title-div {
+  height: 100px;
+  text-align: center;
+  display: block;
+}
+
+/*350px width*/
+@media (max-width: 350px) {
+  .logo-img {
+    width: 300px;
+  }
+}
